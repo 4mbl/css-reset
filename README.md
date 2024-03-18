@@ -2,25 +2,37 @@
 
 > Easy CSS reset.
 
-## Usage
+## Installation
 
-Install the [`@4mbl/css-reset`](https://www.npmjs.com/package/@4mbl/css-reset) npm package.
+You can either install the npm package directly, or use a CDN like [unpkg](https://unpkg.com/).
 
-```shell
-npm install @4mbl/css-reset
-```
+### Using npm package
 
-Import the CSS reset file in your main CSS file.
+1. Install the [`@4mbl/css-reset`](https://www.npmjs.com/package/@4mbl/css-reset) npm package.
 
-```css
-@import '@4mbl/css-reset/reset.css';
-```
+    ```shell
+    npm install @4mbl/css-reset
+    ```
 
-Or include it directly in a HTML file.
+2. Import the CSS reset file in your main CSS file.
+
+    ```css
+    @import '@4mbl/css-reset/reset.css';
+    ```
+
+    Or include it directly in a HTML file.
+
+    ```html
+    <link rel="stylesheet" href="node_modules/@4mbl/css-reset/reset.css" />
+    ```
+
+### Using CDN
 
 ```html
-<link rel="stylesheet" href="node_modules/@4mbl/css-reset/reset.css" />
+<link rel="stylesheet" href="https://www.unpkg.com/@4mbl/css-reset@latest/reset.css" />
 ```
+
+You should replace "latest" in the URL with the newest version to avoid breaking changes in the future!
 
 ## Available branches
 
