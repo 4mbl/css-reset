@@ -1,0 +1,21 @@
+{
+  "name": "@4mbl/css-reset",
+  "version": "1.0.0",
+  "description": "Easy CSS reset",
+  "type": "module",
+  "author": "4mbl",
+  "license": "MIT",
+  "homepage": "https://github.com/4mbl/css-reset#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4mbl/css-reset.git"
+  },
+  "keywords": [
+    "css",
+    "css-reset"
+  ],
+  "scripts": {
+    "get:version": "node -pe \"require('./package.json')['version']\" > version.txt",
+    "release": "npm version major --no-git-tag-version && npm run get:version && npm publish && git add . && git commit --file version.txt && git push && rm version.txt"
+  }
+}
